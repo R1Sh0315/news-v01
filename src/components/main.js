@@ -4,39 +4,10 @@ import Header from "./header";
 
 export default function Main() {
   const [urlData, seturlData] = useState([]);
-  const [data, setData] = useState([]);
   const [isDarkMode, setDarkMode] = useState(false);
   const [search, setSearch] = useState("apple");
 
   useEffect(() => {
-    // mock
-    const mockData = [
-      {
-        author: "Mark Serrels",
-        content:
-          'Remember the "golden age" of TV?\r\nTV\'s golden age most likely kicked off with The Sopranos in 1999, but it really got rolling with shows like The Wire, Lost and Deadwood in the mid-2000s. Big-time pr… [+4345 chars]',
-        description: "It could be the best show of 2022.",
-        publishedAt: "2022-08-25T01:19:00Z",
-        title: "Everyone Should Watch the Best TV Show on Apple TV Plus - CNET",
-        url: "https://www.cnet.com/culture/entertainment/everyone-should-watch-the-best-tv-show-on-apple-tv-plus/",
-        urlToImage:
-          "https://www.cnet.com/a/img/resize/9b91a74f25c01f6c16cf032c16…e85ed/severance.jpg?auto=webp&fit=crop&height=630&width=1200",
-      },
-      {
-        author: "Mark Serrels",
-        content:
-          'Remember the "golden age" of TV?\r\nTV\'s golden age most likely kicked off with The Sopranos in 1999, but it really got rolling with shows like The Wire, Lost and Deadwood in the mid-2000s. Big-time pr… [+4345 chars]',
-        description: "It could be the best show of 2022.",
-        publishedAt: "2022-08-25T01:19:00Z",
-        title: "Everyone Should Watch thele TV Plus - CNET",
-        url: "https://www.cnet.com/culture/entertainment/everyone-should-watch-the-best-tv-show-on-apple-tv-plus/",
-        urlToImage:
-          "https://www.cnet.com/a/img/resize/9b91a74f25c01f6c16cf032c16…e85ed/severance.jpg?auto=webp&fit=crop&height=630&width=1200",
-      },
-    ];
-
-
-    setData(mockData);
     // date
     var dateData = new Date();
     var date = dateData.getUTCDate();

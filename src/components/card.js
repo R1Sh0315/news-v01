@@ -1,11 +1,8 @@
-import { useState } from "react";
-
 function Card(props) {
-  const [id, setId] = useState(null);
   return (
     <div className="card">
       {props.data.map((elm, id) => (
-        <div key={id} onClick={() => setId(id)} className="card-container">
+        <div key={id} className="card-container">
           <div className="details-container">
             <div>
               <img
@@ -29,7 +26,7 @@ function Card(props) {
                 </span>{" "}
                 <span>
                   {" "}
-                  <a href={elm.url} target="_blank">
+                  <a href={elm.url}>
                     ...read more
                   </a>
                 </span>
