@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.dark-mode{
+    background-color: rgb(33, 33, 33);
+    color: white;
+}
+
+.card {
+  border: 1px solid black;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.card-container {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  padding: 10px;
+  border-radius: 5px;
+  min-width: 400px;
+  max-width: 100%;
+  justify-content: space-between;
+}
+
+.card-title {
+  font-weight: 700;
+  font-size: 19pt;
+}
+
+.card-description {
+  padding: 5px 0;
+}
+.card-content {
+  padding: 5px 0;
+}
+.card-author {
+  padding: 5px 0;
+  text-align: end;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.content-img {
+  padding: 0 10px;
+  margin: 10px 0;
+  width: 200px;
+  height: fit-content;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-conatiner{
+    height: 50px;
+    position: sticky;
+    top: 0;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+}
+
+.light-mode{
+    background-color: white;
+}
+.dark-mode{
+    background-color: rgb(33, 33, 33);
+}
+
+.container-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-container{
+    padding: 0 15px;
+}
+
+.user-input, 
+.user-search-btn{
+  height: 25px;
+  margin: 0 5px;
+}
+
+.user-search-btn{
+  width: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12pt;
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 3px;
+}
+
+.user-input{
+  width: 75%;
+}
+
+.input-btn-container{
+  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
